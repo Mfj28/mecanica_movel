@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import BookingScheduler from '@/components/BookingScheduler';
 import { Wrench, Battery, Zap, MapPin, Phone, Mail, Clock, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
 
@@ -212,6 +213,27 @@ export default function Home() {
             />
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent/10 rounded-sm -z-10"></div>
           </div>
+        </div>
+      </section>
+
+      {/* Booking Section */}
+      <section id="booking" className="py-20 md:py-32">
+        <div className="container">
+          <div className="mb-16">
+            <p className="font-mono text-sm text-accent font-bold tracking-widest mb-4">AGENDAMENTO ONLINE</p>
+            <h2 className="font-mono font-bold text-4xl md:text-5xl mb-6">
+              RESERVE SEU<br />
+              <span className="text-primary">HORÁRIO AGORA</span>
+            </h2>
+            <div className="w-16 h-1 bg-accent"></div>
+            <p className="text-foreground/80 mt-6 max-w-2xl">
+              Escolha a data e horário que melhor se adequam à sua agenda. Seu agendamento será sincronizado automaticamente com nosso Google Calendar.
+            </p>
+          </div>
+
+          <Card className="tech-card p-8 md:p-12 max-w-3xl">
+            <BookingScheduler />
+          </Card>
         </div>
       </section>
 

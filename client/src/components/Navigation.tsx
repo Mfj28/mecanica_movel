@@ -9,6 +9,7 @@ export default function Navigation() {
     { label: 'Início', href: '#home' },
     { label: 'Serviços', href: '#services' },
     { label: 'Sobre', href: '#about' },
+    { label: 'Agendamento', href: '#booking' },
     { label: 'Contato', href: '#contact' },
   ];
 

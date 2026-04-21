@@ -41,7 +41,7 @@ export default function Home() {
 
   const stats = [
     { number: '500+', label: 'Clientes Satisfeitos' },
-    { number: '15 ANOS', label: 'De Experiência' },
+    { number: '5 ANOS', label: 'De Experiência' },
     { number: '24/7', label: 'Disponibilidade' },
   ];
 
